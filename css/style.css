@@ -1,0 +1,168 @@
+/*------------------------------------*\
+	COMMONS CLASSES
+\*------------------------------------*/
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    margin-bottom: 1.1em;
+}
+
+.features,
+.blog,
+.clients,
+.prefooter .container-fluid
+{
+    padding-top: 3.3em;
+    padding-bottom: 4.2em;
+}
+
+.menu-btn {
+    position: fixed;
+    padding: 20px 20px;
+}
+/*------------------------------------*\
+	HEADER
+\*------------------------------------*/
+header .container-fluid
+{
+  background-image: url('../images/mainphoto.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 36px;
+}
+#home  h1 {
+    font-size: 6.2rem;
+}
+
+.dark-text {
+    color: #1d4754;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: overlay;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.logo
+{
+    background: none;
+    border: 0px;
+}
+
+#feat {
+    background-color: #F9F9FA;
+    color: #A1A7AF;
+    font-weight: 400;
+}
+.page-footer {
+  background-color: #525252;
+}
+
+/*------------------------------------*\
+	SECTIONS
+\*------------------------------------*/
+
+.number .container-fluid
+{
+    background-image: url('../images/aboutme.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.opaline
+{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: #80d7f7a8;
+    height: inherit;
+}
+
+.opaline h1,
+.opaline h2,
+.opaline h3,
+.opaline h4,
+.opaline h5,
+.opaline h6,
+.opaline p
+{
+    color: #FFFFFF;
+}
+
+.opaline .boxes
+{
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border: 1px solid #FFF;
+}
+
+.boxes .odometer.odometer-theme-default
+{
+  font-family: 'Roboto Slab', serif;
+}
+
+#about {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 90vh; 
+}
+
+#history .row {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#news, #photos {
+background-color: #F9F9FA;
+}
+
+.story {
+    background-image: url('https://unsplash.it/3000/2000?image=531');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+}
+
+.carousel-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 850px) {
+ #home h1 {
+     margin-bottom: 0.1em;
+     margin: -2.2rem 0 1.68rem 0;
+     font-size: 4.2rem !important;
+ }
+ .dark-text {
+     color: #FFF;
+ }
+ #home .row {
+    margin-bottom: 0px;
+    margin-top: 0px;
+ }
+}
