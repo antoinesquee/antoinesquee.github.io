@@ -14,9 +14,9 @@ var ProcessForm = function (settings) {
         attachmentsFileExt: ['jpg', 'jpeg', 'bmp', 'gif', 'png'], // дефолтные допустимые расширения для файлов
         isUseDefaultSuccessMessage: true // отображать дефолтное сообщение об успешной отправки формы
     };
-    this._isCaptchaSection = false; // имеется ли в форме блок с капчей
-    this._isAgreementSection = false; // имеется ли в форме блок с пользовательским соглашением
-    this._isAttachmentsSection = false; // имеется ли в форме блок для добавления к ней файлов
+    this._isCaptchaSection = true; // имеется ли в форме блок с капчей
+    this._isAgreementSection = true; // имеется ли в форме блок с пользовательским соглашением
+    this._isAttachmentsSection = true; // имеется ли в форме блок для добавления к ней файлов
     this._attachmentsIdCounter = 0; // счетчик, хранящий количество добавленных к форме файлов
     this._attachmentsMaxItems = 5; // переменная, определяющее максимальное количество файлов, которые можно прикрепить к форме
     this._attachmentsItems = []; // переменная, хранящая массив файлов, которые нужно прекрепить к форме
