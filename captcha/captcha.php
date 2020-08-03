@@ -29,7 +29,7 @@ $image = imagecreatefrompng(dirname(__FILE__) . 'background.png');
 // устанавливаем цвет (R-200, G-240, B-240) изображению, хранящемуся в $image
 $colour = imagecolorallocate($image, 130, 130, 130);
 // присваиваем переменной font название шрифта
-$font = dirname(__FILE__) . '/oswald.ttf';
+$font = dirname(__FILE__) . 'oswald.ttf';
 // устанавливаем случайное число между -10 и 10 градусов для поворота текста
 $rotate = rand(-10, 10);
 // рисуем текст на изображении шрифтом TrueType (1 параметр - изображение ($image),
