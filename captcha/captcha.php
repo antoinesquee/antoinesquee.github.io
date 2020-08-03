@@ -25,7 +25,7 @@ $_SESSION[$id] = $captchaStr;
 // генерируем CAPTCHA
 
 // создаем новое изображение из файла background.png
-$image = imagecreatefrompng(dirname(__FILE__) . '/background.png');
+$image = imagecreatefrompng(dirname(__FILE__) . 'background.png');
 // устанавливаем цвет (R-200, G-240, B-240) изображению, хранящемуся в $image
 $colour = imagecolorallocate($image, 130, 130, 130);
 // присваиваем переменной font название шрифта
