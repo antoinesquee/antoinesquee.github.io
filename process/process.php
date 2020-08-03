@@ -121,7 +121,7 @@ if (isset($_POST['message'])) {
   log_write('Не пройдена валидация поля: name! Оно не заполнено!');
 }
 
-/* 5 ЭТАП - ПРОВЕРКА КАПЧИ */
+/* 5 ЭТАП - ПРОВЕРКА КАПЧИ 
 if (IS_CHECK_CAPTCHA == true) {
   if (isset($_POST['captcha']) && isset($_SESSION['captcha'])) {
     $captcha = filter_var($_POST['captcha'], FILTER_SANITIZE_STRING); // защита от XSS
@@ -135,7 +135,7 @@ if (IS_CHECK_CAPTCHA == true) {
     $data['result'] = 'error';
     log_write('Произошла ошибка при проверке капчи!');
   }
-}
+}*/
 
 /* 6 ЭТАП - ВАЛИДАЦИЯ ФАЙЛОВ */
 if (isset($_FILES['attachment'])) {
