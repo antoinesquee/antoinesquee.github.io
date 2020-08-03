@@ -106,7 +106,7 @@ if (isset($_POST['email'])) {
 if (isset($_POST['message'])) {
   $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING); // защита от XSS
   $messageLength = mb_strlen($message, 'UTF-8');
-  if ($messageLength < 20) {
+  if ($messageLength < 1) {
     $data['message'] = 'Текст должен быть не короче 20 симв. Длина текста сейчас: ' . $messageLength . ' симв.';
     $data['result'] = 'error';
     log_write('Не пройдена валидация поля: message! Его длина равна ' . $messageLength . ' симв.');
