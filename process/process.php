@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 /* 1 ЭТАП - НАСТРОЙКА ПЕРЕМЕННЫХ */
 
 const
-IS_CHECK_CAPTCHA = true, // проверять капчу
+IS_CHECK_CAPTCHA = false, // проверять капчу
 IS_SEND_MAIL = true, // отправлять письмо получателю
 IS_SEND_MAIL_SENDER = false, // отправлять информационное письмо отправителю
 IS_WRITE_LOG = true, // записывать данные в лог
